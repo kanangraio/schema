@@ -1,0 +1,36 @@
+{
+  "name": "country",
+  "namespace": "com.kanangradata.core",
+  "aliases": [
+    "countries"
+  ],
+  "type": "record",
+  "fields": [
+    {
+      "name": "name",
+      "type": "string"
+    },
+    {
+      "name": "ISO2",
+      "type": "string"
+    },
+    {
+      "name": "ISO3",
+      "type": "string"
+    },
+    {
+      "name": "official",
+      "type": "boolean",
+      "default": 1
+    },
+    {
+      "name": "source",
+      "type": {
+        "type": "array",
+        "items": "string"
+      }
+    }
+  ],
+  "doc": "This schema holds core information about countries",
+  "url": "https://kanangradata.com/schema/core/country"
+}
