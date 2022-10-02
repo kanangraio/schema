@@ -1,0 +1,39 @@
+{
+  "name": "location",
+  "namespace": "com.kanangradata.core",
+  "aliases": [
+    "products"
+  ],
+  "type": "record",
+  "fields": [
+    {
+      "name": "address",
+      "type": "string",
+      "default" : null
+    },
+    {
+      "name": "city",
+      "type": "string",
+      "default" : null
+    },
+    {
+      "name": "state",
+      "type": "string",
+      "default" : null
+    },
+    {
+      "name": "country",
+      "type": "string"
+    },
+    {
+      "name": "position",
+      "type": {
+        "type": "record",
+        "items": "com.kanangradata.core.position"
+      },
+      "default": null
+    }
+  ],
+  "doc": "This schema holds core information about a geographical location",
+  "url": "https://kanangradata.com/schema/core/location"
+}

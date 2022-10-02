@@ -24,7 +24,7 @@
       "default": 1
     },
     {
-      "name": "source",
+      "name": "sources",
       "type": {
         "type": "array",
         "items": "string"

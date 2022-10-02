@@ -1,0 +1,32 @@
+{
+  "name": "link",
+  "namespace": "com.kanangradata.core",
+  "aliases": [
+    "links"
+  ],
+  "type": "record",
+  "fields": [
+    {
+      "name": "url",
+      "type": "string"
+    },
+    {
+      "name": "summary",
+      "type": "string"
+    },
+    {
+      "name": "category",
+      "type": "string",
+      "default": "website",
+      "doc": "Examples includes website, source code, twitter, slack, wikipedia, etc"
+    },
+    {
+      "name": "title",
+      "type": "string",
+      "default": null,
+      "doc": "This is the url title retrieved from validating the url"
+    }
+  ],
+  "doc": "This schema holds core information about website links",
+  "url": "https://kanangradata.com/schema/core/link"
+}

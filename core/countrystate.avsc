@@ -1,0 +1,24 @@
+{
+  "name": "countrystate",
+  "namespace": "com.kanangradata.core",
+  "aliases": [
+    "states"
+  ],
+  "type": "record",
+  "fields": [
+    {
+      "name": "country",
+      "type": "string"
+    },
+    {
+      "name": "state",
+      "type": "string"
+    },
+    {
+      "name": "name",
+      "type": "string"
+    }
+  ],
+  "doc": "This schema holds core information about states of countries",
+  "url": "https://kanangradata.com/schema/core/countrystate"
+}

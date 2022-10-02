@@ -1,0 +1,28 @@
+{
+  "name": "position",
+  "namespace": "com.kanangradata.core",
+  "aliases": [
+    "coordinates"
+  ],
+  "type": "record",
+  "fields": [
+    {
+      "name": "longitude",
+      "type": "float",
+      "aliases" : [ "long", "lng" ]
+    },
+    {
+      "name": "latitude",
+      "type": "float",
+      "aliases" : [ "lat" ]
+    },
+    {
+      "name": "altitude",
+      "type": "float",
+      "aliases" : [ "elevation" ],
+      "default" : null
+    }
+  ],
+  "doc": "This schema holds core information about a geographical position on planet Earth",
+  "url": "https://kanangradata.com/schema/core/position"
+}
