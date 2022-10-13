@@ -8,23 +8,25 @@
   "fields": [
     {
       "name": "url",
-      "type": "string"
+      "type": "string",
+      "doc": "The url of the link"
     },
     {
       "name": "summary",
-      "type": "string"
+      "type": "string",
+      "doc": "A summary of the link, used as text"
     },
     {
       "name": "category",
       "type": "string",
       "default": "website",
-      "doc": "Examples includes website, source code, twitter, slack, wikipedia, etc"
+      "doc": "The category of the link, used for filtering, e.g website, source code, twitter, slack, wikipedia, free trial, etc"
     },
     {
       "name": "title",
-      "type": "string",
+      "type": [ "null", "string"],
       "default": null,
-      "doc": "This is the url title retrieved from validating the url"
+      "doc": "The retrieved value of the <title> tag of the url"
     }
   ],
   "doc": "This schema holds core information about website links",

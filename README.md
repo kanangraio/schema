@@ -9,9 +9,13 @@ https://json-schema-validator.herokuapp.com/avro.jsp
 
 - All schemas are defined in lowercase.
 - All schemas are singular. An alias can be used for plural cross references.
-- All fields are defined in lowercase unless it is a widely accepted abbreviation (which is uppercase).
-- Schemas should follow a two level format similar to the Star Schema concept
+- All fields are defined in lowercase including widely accepted abbreviations.
+- Schemas should try to follow a maximum two levels of nesting similar to the Star Schema concept
 
 # core
 - Country
 - CountryState
+- Category
+- Link
+- Location
+- Position

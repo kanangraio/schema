@@ -7,23 +7,43 @@
   "type": "record",
   "fields": [
     {
-      "name": "address",
-      "type": "string",
-      "default" : null
-    },
-    {
-      "name": "city",
-      "type": "string",
-      "default" : null
-    },
-    {
-      "name": "state",
-      "type": "string",
-      "default" : null
-    },
-    {
       "name": "country",
       "type": "string"
+    },
+    {
+      "name": "address",
+      "type": {
+        "type": "record",
+        "fields": [
+          {
+            "name": "name",
+            "type": "string",
+            "default": null,
+            "doc": "For address with a specific name, e.g. business"
+          },
+          {
+            "name": "line",
+            "type": "string",
+            "default": null
+          },
+          {
+            "name": "city",
+            "type": "string",
+            "default": null
+          },
+          {
+            "name": "state",
+            "type": "string",
+            "default": null
+          },
+          {
+            "name": "code",
+            "type": "string",
+            "default": null,
+            "doc": "ZipCode/Postal Code etc"
+          }
+        ]
+      }
     },
     {
       "name": "position",
